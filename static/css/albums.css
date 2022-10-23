@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: #FFFDFD;
+  }
+
+
+#album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #FFBD00;
+    border-radius: 60px;
+    width: 500px;
+  }
+  
+h2 {
+    color: #FF5400;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+#artist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #9E0059;
+  border-radius: 60px;
+  width: 500px;
+
+}
+  
+h3 {
+  color: #F71735;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
