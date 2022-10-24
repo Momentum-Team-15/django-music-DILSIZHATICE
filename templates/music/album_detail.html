@@ -7,4 +7,8 @@
 
     <p>{{ album.artist }}</p>
 
+    <a href="{% url 'album_edit' pk=album.pk %}">EDIT</a>
+
+    <a href="{% url 'album_delete' pk=album.pk %}">DELETE</a>
+    
 {% endblock %} 

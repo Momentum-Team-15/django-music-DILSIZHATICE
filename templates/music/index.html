@@ -1,18 +1,16 @@
-{% extends 'base.html' %} 
- 
+{% extends 'base.html' %}
+
 
 {% block content %}
-    <h2>This is my homepage called index.html</h2>
+<h2>This is my homepage called index.html</h2>
 
-    <a href="{% url 'create_album' %}"> Add Album</a>
+<a href="{% url 'create_album' %}"> Add Album</a>
 
-    <h3>Those are my album lists: </h3>
-
+<h3>Those are my album lists: </h3>
+<div class="container">
     {% for album in albums %}
-        <class id="album"><a href="{% url 'album_detail' pk=album.pk %}"> {{ album.title }}</a></class> 
-        <div id="artist">  by {{ album.artist }} </div>
+    <class id="album"><a href="{% url 'album_detail' pk=album.pk %}"> {{ album.title }}</a></class>
+    <div id="artist"> by {{ album.artist }} </div>
     {% endfor %}
-
-    
-
+</div>
 {% endblock %}

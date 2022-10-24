@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf import settings
 from django.urls import path, include
 from music import views
 
@@ -24,4 +25,6 @@ urlpatterns = [
     path('album/new', views.create_album, name='create_album'),
     path('__debug__/', include('debug_toolbar.urls')),
     path('album/<int:pk>/', views.album_detail, name="album_detail"),
+    path('albums/<int:pk>/edit', views.album_edit, name='album_edit'),
+    path('albums/<int:pk>/delete', views.album_delete, name='album_delete' ),
 ]
